@@ -15,7 +15,7 @@ A Chrome extension that lets you quickly look up professor ratings from RateMyPr
 2. **Set up Python environment and dependencies**
    ```bash
    # Install required Python packages
-   pip install flask flask-cors ratemyprofessor
+   pip install flask flask-cors RateMyProfessorAPI
    ```
 
 3. **Load the Chrome Extension**
@@ -55,9 +55,13 @@ profscores/
 - **Connection Error**: Verify that the server is running on port 5000
 - **Professor Not Found**: Double-check the spelling of both the professor's name and university
 - **Extension Not Loading**: Ensure all files are in the correct directory and the extension is loaded in Chrome
+- **Package Not Found**: If you get import errors, ensure you've installed the correct package using `pip install RateMyProfessorAPI`
 
 ## Note
-This is a Minimum Viable Product (MVP) created for educational purposes. The extension requires a local server running to function.
+This is a Minimum Viable Product (MVP) created for educational purposes. The extension requires a local server running to function. It uses the unofficial RateMyProfessorAPI package to fetch data.
+
+## Credits
+- [RateMyProfessorAPI](https://pypi.org/project/RateMyProfessorAPI/) - Python package for accessing RateMyProfessor data
 
 ## Contributing
 
