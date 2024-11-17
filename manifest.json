@@ -1,11 +1,12 @@
 {
   "manifest_version": 3,
   "name": "ProfScores",
-  "version": "1.0",
-  "description": "Get professor ratings from RateMyProfessor",
+  "version": "0.1",
+  "description": "A Chrome extension that lets you quickly look up professor ratings from RateMyProfessor.com. Simply enter a professor's name and university to see their ratings, difficulty scores, and more.",
   "permissions": ["activeTab"],
   "host_permissions": ["http://localhost:5000/*"],
   "action": {
-    "default_popup": "default.html"
+    "default_popup": "default.html",
+    "default_icon": "ProfScores.png"
   }
 }
