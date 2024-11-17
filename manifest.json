@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "ProfScores",
+  "version": "1.0",
+  "description": "Get professor ratings from RateMyProfessor",
+  "permissions": ["activeTab"],
+  "host_permissions": ["http://localhost:5000/*"],
+  "action": {
+    "default_popup": "default.html"
+  }
+}
