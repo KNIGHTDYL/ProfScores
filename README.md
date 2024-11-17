@@ -26,9 +26,11 @@ A Chrome extension that lets you quickly look up professor ratings from RateMyPr
    - Select the directory containing the extension files
 
 ## Usage
+https://github.com/user-attachments/assets/e8225eff-56ca-426b-b8ec-630c8f9b67a8
+
 
 1. **Start the local server**
-   ```bash
+   ```
    python rmp.py
    ```
    Keep this running while using the extension.
@@ -39,6 +41,10 @@ A Chrome extension that lets you quickly look up professor ratings from RateMyPr
    - Enter the professor's last name
    - Enter the university name
    - Click "Search Professor"
+  
+## Demo
+
+Watch our demo video to see ProfScores in action: Watch Demo
 
 ## Project Structure
 ```
