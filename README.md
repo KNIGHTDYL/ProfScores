@@ -14,11 +14,17 @@ A Chrome extension that lets you quickly look up professor ratings from RateMyPr
 
 2. **Set up Python environment and dependencies**
    ```bash
-   # Install required Python packages
+
+   # run using virtual environment
+   source virtualenv/bin/activate 
+   ```
+   or
+   ```bash
+   # Install required Python packages locally
    pip install flask flask-cors RateMyProfessorAPI
    ```
 
-3. **Load the Chrome Extension**
+4. **Load the Chrome Extension**
    - Open Google Chrome
    - Go to `chrome://extensions/`
    - Enable "Developer mode" in the top right
@@ -26,6 +32,7 @@ A Chrome extension that lets you quickly look up professor ratings from RateMyPr
    - Select the directory containing the extension files
 
 ## Usage
+
 
 
 
