@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         
         try {
-            const response = await fetch('http://localhost:5000/search_professor', {
+            const response = await fetch('https://profscores-183005a1eeb7.herokuapp.com/search_professor', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

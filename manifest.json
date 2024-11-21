@@ -1,12 +1,35 @@
 {
   "manifest_version": 3,
   "name": "ProfScores",
-  "version": "0.1",
-  "description": "A Chrome extension that lets you quickly look up professor ratings from RateMyProfessor.com. Simply enter a professor's name and university to see their ratings, difficulty scores, and more.",
-  "permissions": ["activeTab"],
-  "host_permissions": ["http://localhost:5000/*"],
+  "version": "1.0",
+  "description": "Quickly look up professor ratings from RateMyProfessor.com. Simply enter a professor's name and university to see their ratings, difficulty scores, and more.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://profscores-183005a1eeb7.herokuapp.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "default.html",
-    "default_icon": "ProfScores.png"
-  }
+    "default_icon": {
+      "16": "ProfScores.png",
+      "48": "ProfScores.png",
+      "128": "ProfScores.png"
+    }
+  },
+  "icons": {
+    "16": "ProfScores.png",
+    "48": "ProfScores.png",
+    "128": "ProfScores.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
 }
